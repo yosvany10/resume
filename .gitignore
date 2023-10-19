@@ -1,0 +1,11 @@
+*.aux
+*.ps
+*.log
+*.dvi
+*.tex~
+*.bbl
+*.blg
+*.out
+*.fls
+*.gz
+*.fd*

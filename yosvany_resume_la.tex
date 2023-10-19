@@ -1,0 +1,192 @@
+%-------------------------
+% Resume in Latex
+% Author : Yosvany Blanco Otaño
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\nocite{*}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom{}
+\raggedright{}
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Yosvany Blanco Otaño} \\ \vspace{1pt}
+    \small (214)--650--4603 $|$ \href{mailto:yosvany@yosvanyblanco.com}{\underline{yosvany@yosvanyblanco.com}} $|$ 
+    \href{https://linkedin.com/in/yosvanyblanco}{\underline{linkedin.com/in/yosvanyblanco/}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart{}
+
+    \resumeSubheading{Amazon}{June 2019 --- Present}{Software Development Engineer II | Privacy}{Austin, TX}
+      \resumeItemListStart{}
+        \resumeItem{Improved the reliability of our software by implementing integration testing infrastructure that uses repeatable patterns to identify and fix bugs early.}
+        \resumeItem{Created CDK pattern which generates multiple AWS Lambdas and APIGateway from Smithy and OpenAPI allowing developers on the team to focus on writing business logic.}
+        \resumeItem{Created and managed pipeline infrastructure including introducing repeatable patterns for other developers to use in their services.}
+        \resumeItem{Advocated for switch to internal service framework which greatly reduced undifferentiated work by creating reusable package patterns and proving performance and ease of use.}
+        \resumeItem{Designed and implemented async process to ingest privacy (DSAR and deletion) data in realtime from sister services using SNS, SQS, Lambda, and Java.}
+        \resumeItem{Introduced reusable patterns in frontend cypress tests allowing developers to focus on testing their features.}
+        \resumeItem{Designed and implemented microservice for storing and retrieving privacy related data used by internal privacy audit service.}
+        \resumeItem{Designed and implemented CSV import/export feature using S3, Lambda, SNS, SQS, and Postgres which has allowed 8500+ customers to manipulate large amounts of data without needing to interact with UI.}
+        \resumeItem{Major contributor in migration of privacy audit service to a GoLang backend running on AWS Fargate which led to roughly 66\% reduction in request latency.}
+        \resumeItem{Implemented AWS Lambda interceptor simplifying our service authentication flow and improving security.}
+        \resumeItem{Integrated privacy audit service with service review tool used by teams to audit production readiness.}
+        \resumeItem{Introduced repeatable infrastructure package patterns using AWS CDK speeding up development time across the team.}
+        \resumeItem{Implemented internal privacy audit service using Python, cloudformation, AWS Lambda, AWS S3, and internal pipeline tooling.}
+        \resumeItem{Have owned many features end to end (backend, frontend, design, testing, support, etc..)}
+        \resumeItem{Internal service has cataloged over 25,000 services and has over 51,000 unique internal customers.}
+        \resumeItem{Extensive experience with oncall, customer issue triage, runbook entries, data migrations, etc..}
+        \resumeItem{Conducted 70+ interviews to identify and hire top software engineering talent.}
+      \resumeItemListEnd{}
+      
+% -----------Multiple Positions Heading-----------
+   % \resumeSubSubheading
+   %  {Software Engineer I}{Oct 2014 - Sep 2016}
+   %  \resumeItemListStart
+   %     \resumeItem{Apache Beam}
+   %       {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+   %  \resumeItemListEnd
+   % \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading{General Motors}{June 2017 --- June 2019}{Software Developer | Manufacturing}{Austin, TX}
+      \resumeItemListStart{}
+        \resumeItem{Designed and implemented clustered message filtering system using C\#, Akka.Net and Akka.Net Cluster library for routing and surfacing plant floor robot issues.}
+        \resumeItem{Designed and Implemented file validation system for internal audit tool.}
+        \resumeItem{Added authentication and authorization using JWT and internal identity service.}
+        \resumeItem{Implemented reusable S3 client reducing undifferentiated effort for the team.}
+        \resumeItem{Added caching layer which reduced homepage load times by 80\%}
+        \resumeItem{Added code scanners to development pipeline improving code quality.}
+        \resumeItem{Increased unit test coverage on legacy service to above 80\% with meaningful tests.}
+        \resumeItem{Migrated a legacy internal website to Spring boot and Angular from Spring and Java Server Pages.}
+        \resumeItem{Created repeatable patterns for automated frontend tests using internal testing library leveraging Selenium.}
+    \resumeItemListEnd{}
+
+  \resumeSubHeadingListEnd{}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AWS}{: Lambda, S3, Fargate, DynamoDB, RDS, SNS, SQS, IAM, EventBridge, CDK, Cloudformation} \\
+     \textbf{Languages}{: Go, Java, Python, Typescript, Smithy} \\
+     \textbf{Frameworks/Libraries}{: React, Angular, JUnit, Spring Boot} \\
+     \textbf{Developer Tools}{: Git, Intellij, VSCode, Postman} \\
+     \textbf{Databases}{: Postgres, DynamoDB}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart{}
+    \resumeSubheading{University of North Texas}{Denton, TX}{Bachelor of Science in Computer Science}{May 2017}
+  \resumeSubHeadingListEnd{}
+
+
+%-------------------------------------------
+\end{document}
