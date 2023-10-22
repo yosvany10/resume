@@ -124,21 +124,19 @@
 
     \resumeSubheading{Amazon}{June 2019 --- Present}{Software Development Engineer II | Privacy}{Austin, TX}
       \resumeItemListStart{}
-        \resumeItem{Improved the reliability of our software by implementing integration testing infrastructure that uses repeatable patterns to identify and fix bugs early.}
-        \resumeItem{Created CDK pattern which generates multiple AWS Lambdas and APIGateway from Smithy and OpenAPI allowing developers on the team to focus on writing business logic.}
-        \resumeItem{Created and managed pipeline infrastructure including introducing repeatable patterns for other developers to use in their services.}
-        \resumeItem{Advocated for switch to internal service framework which greatly reduced undifferentiated work by creating reusable package patterns and proving performance and ease of use.}
+        \resumeItem{Designed and implemented microservice using Java and Amazon Coral service framework for storing and retrieving privacy related data used by internal privacy audit service.}
+        \resumeItem{Implemented internal privacy audit service using Python, Cloudformation, AWS Lambda, and AWS S3 which has cataloged over 25,000 services and has over 51,000 unique internal customers.}  
+        \resumeItem{Designed and implemented CSV import/export feature using Go, Typescript, React, S3, Lambda, SNS, SQS, and Postgres which has allowed 8500+ customers to manipulate data.}
+        \resumeItem{Major contributor in migration of privacy audit service to a Go backend running on AWS Fargate from AWS Lambda and Python which led to roughly 66\% reduction in request latency.}
         \resumeItem{Designed and implemented async process to ingest privacy (DSAR and deletion) data in realtime from sister services using SNS, SQS, Lambda, and Java.}
-        \resumeItem{Introduced reusable patterns in frontend cypress tests allowing developers to focus on testing their features.}
-        \resumeItem{Designed and implemented microservice for storing and retrieving privacy related data used by internal privacy audit service.}
-        \resumeItem{Designed and implemented CSV import/export feature using S3, Lambda, SNS, SQS, and Postgres which has allowed 8500+ customers to manipulate large amounts of data without needing to interact with UI.}
-        \resumeItem{Major contributor in migration of privacy audit service to a GoLang backend running on AWS Fargate which led to roughly 66\% reduction in request latency.}
-        \resumeItem{Implemented AWS Lambda interceptor simplifying our service authentication flow and improving security.}
-        \resumeItem{Integrated privacy audit service with service review tool used by teams to audit production readiness.}
-        \resumeItem{Introduced repeatable infrastructure package patterns using AWS CDK speeding up development time across the team.}
-        \resumeItem{Implemented internal privacy audit service using Python, cloudformation, AWS Lambda, AWS S3, and internal pipeline tooling.}
+        \resumeItem{Implemented AWS Lambda interceptor using Node.js and Typescript which verified users visiting our website were authenticated simplifying our service authentication flow and improving security.}
+        \resumeItem{Created CDK pattern which generates multiple AWS Lambdas and APIGateway from Smithy and OpenAPI allowing developers on the team to focus on writing business logic.}
+        \resumeItem{Enhanced our product’s reach to all development teams within Amazon by integrating with internal service review tool which is utilized for auditing production readiness.}
+        \resumeItem{Researched and advocated for switch to internal service framework which helped reduce creation of base level production ready services from 1 month to under 2 weeks.}
+        \resumeItem{Created reusable infrastructure patterns using CDK for AWS Lambda, S3, SNS, SQS, and internal pipeline to reduce team development time.}
+        \resumeItem{Introduced reusable patterns in frontend React Cypress tests allowing developers to focus on testing their features.}
+        \resumeItem{Improved the reliability of our software by implementing integration testing infrastructure using Amazon Hydra.}
         \resumeItem{Have owned many features end to end (backend, frontend, design, testing, support, etc..)}
-        \resumeItem{Internal service has cataloged over 25,000 services and has over 51,000 unique internal customers.}
         \resumeItem{Extensive experience with oncall, customer issue triage, runbook entries, data migrations, etc..}
         \resumeItem{Conducted 70+ interviews to identify and hire top software engineering talent.}
       \resumeItemListEnd{}
@@ -155,13 +153,13 @@
 
     \resumeSubheading{General Motors}{June 2017 --- June 2019}{Software Developer | Manufacturing}{Austin, TX}
       \resumeItemListStart{}
-        \resumeItem{Designed and implemented clustered message filtering system using C\#, Akka.Net and Akka.Net Cluster library for routing and surfacing plant floor robot issues.}
-        \resumeItem{Designed and Implemented file validation system for internal audit tool.}
-        \resumeItem{Added authentication and authorization using JWT and internal identity service.}
-        \resumeItem{Implemented reusable S3 client reducing undifferentiated effort for the team.}
-        \resumeItem{Added caching layer which reduced homepage load times by 80\%}
-        \resumeItem{Added code scanners to development pipeline improving code quality.}
-        \resumeItem{Increased unit test coverage on legacy service to above 80\% with meaningful tests.}
+        \resumeItem{Designed and Implemented file validation system for internal audit tool using Java and Spring Boot with a presentation layer in Angular 2.}
+        \resumeItem{Added authentication and authorization to Spring Boot service using JWT and internal identity service.}
+        \resumeItem{Created reusable S3 client in Java reducing undifferentiated effort for the team.}
+        \resumeItem{Added caching layer to Spring Boot service using Redis which reduced homepage load times by 80\%}
+        \resumeItem{Designed and implemented proof of concept clustered message filtering system using C\#, Akka.Net and Akka.Net Cluster library for routing and surfacing plant floor robot issues.}
+        \resumeItem{Added SonarQube code scanners to development pipeline improving code quality.}
+        \resumeItem{Increased unit test coverage on legacy Java service to above 80\% with meaningful tests.}
         \resumeItem{Migrated a legacy internal website to Spring boot and Angular from Spring and Java Server Pages.}
         \resumeItem{Created repeatable patterns for automated frontend tests using internal testing library leveraging Selenium.}
     \resumeItemListEnd{}
