@@ -7,7 +7,6 @@
 
 \documentclass[letterpaper,11pt]{article}
 \nocite{*}
-
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -113,7 +112,7 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Yosvany Blanco Otaño} \\ \vspace{1pt}
+    \textbf{\Huge Yosvany Blanco Otaño} \\ \vspace{1pt}
     \small (214)--650--4603 $|$ \href{mailto:yosvany@yosvanyblanco.com}{\underline{yosvany@yosvanyblanco.com}} $|$ 
     \href{https://linkedin.com/in/yosvanyblanco}{\underline{linkedin.com/in/yosvanyblanco/}}
 \end{center}
@@ -122,23 +121,27 @@
 \section{Experience}
   \resumeSubHeadingListStart{}
 
-    \resumeSubheading{Amazon}{June 2019 --- Present}{Software Development Engineer II | Privacy}{Austin, TX}
+    \resumeSubheading{Netflix}{January 2024 --- Present}{Software Engineer → Senior Software Engineer}{New York, NY}
+    \resumeItemListStart{}
+      \resumeItem{Enhanced security for subscriber data in ``Copy prod to test'' service by isolating environments and implementing key rotation, eliminating significant security vulnerabilities.}
+      \resumeItem{Streamlined device retirement process through new UI development, reducing engineering hours and incorrectly retired devices while improving security and cost savings.}
+      \resumeItem{Eliminated long-standing duplicate account bug in subscriber database by engineering a periodic, automated reconciliation process, preventing double charges for roughly 900 subscribers.}
+      \resumeItem{Replaced legacy UI with new React-based interface, improving UX with modern integration patterns and efficient data-fetching.}
+      \resumeItem{Provided architectural mentorship across the stack, focusing on functional patterns in React, scalable component design, and backend integration best practices.}
+      \resumeItem{Authored alerting guidelines and co-created operational proposals, implementing PR templates and standardizing code quality practices.}
+    \resumeItemListEnd{}
+  
+
+    \resumeSubheading{Amazon}{June 2019 --- December 2023}{Software Development Engineer II | Privacy}{Austin, TX}
       \resumeItemListStart{}
-        \resumeItem{Designed and implemented microservice using Java and Amazon Coral service framework for storing and retrieving privacy related data used by internal privacy audit service.}
-        \resumeItem{Major contributor to first iteration of internal privacy audit service using Python, Cloudformation, AWS Lambda, and AWS S3 which has cataloged over 25,000 services and has over 51,000 unique internal customers.}  
-        \resumeItem{Designed and implemented CSV import/export feature using Go, Typescript, React, S3, Lambda, SNS, SQS, and Postgres which has allowed 8500+ customers to bulk insert and edit data in privacy tool.}
-        \resumeItem{Major contributor in migration of privacy audit service to a Go backend running on AWS Fargate from AWS Lambda and Python which led to roughly 66\% reduction in request latency.}
-        \resumeItem{Designed and implemented async process to ingest privacy (DSAR and deletion) data in realtime from sister services using SNS, SQS, Lambda, and Java.}
-        \resumeItem{Implemented AWS Lambda interceptor using Node.js and Typescript which verified users visiting our website were authenticated simplifying our service authentication flow and improving security.}
-        \resumeItem{Created CDK pattern which generates multiple AWS Lambdas and APIGateway from Smithy and OpenAPI allowing developers on the team to focus on writing business logic.}
-        \resumeItem{Enhanced our product’s reach to all development teams within Amazon by integrating with internal service review tool which is utilized for auditing production readiness.}
-        \resumeItem{Researched and advocated for switch to internal service framework which helped reduce creation of base level production ready services from 1 month to under 2 weeks.}
-        \resumeItem{Created reusable infrastructure patterns using CDK for AWS Lambda, S3, SNS, SQS, and internal pipeline to reduce team development time.}
-        \resumeItem{Introduced reusable patterns in frontend React Cypress tests allowing developers to focus on testing their features.}
-        \resumeItem{Improved the reliability of our software by implementing integration testing infrastructure using internal tool Amazon Hydra.}
-        \resumeItem{Have owned many features end to end (backend, frontend, design, testing, support, etc..)}
-        \resumeItem{Extensive experience with oncall, customer issue triage, runbook entries, data migrations, etc..}
-        \resumeItem{Conducted 70+ interviews to identify and hire top software engineering talent.}
+      \resumeItem{Built and maintained a suite of Java microservices on Amazon Coral, enabling secure, scalable handling of internal privacy data used by audit infrastructure.}
+      \resumeItem{Key contributor to an internal privacy audit system (Python, Lambda, S3, CloudFormation) that cataloged 25K+ services and served 51K+ internal users.}
+      \resumeItem{Reduced request latency by 66\% by migrating core backend from Python + Lambda to Go on AWS Fargate.}
+      \resumeItem{Built bulk import/export system (Go, React, Postgres, AWS) used by 8.5K+ engineers, saving hours by bypassing slow and manual web UIs.}
+      \resumeItem{Created reusable patterns across the team’s full stack (Go, React, Node.js, AWS CDK, Postgres), significantly accelerating development velocity.}
+      \resumeItem{Created reusable integration and unit test patterns for Java and React, enabling 90\%+ unit test coverage across the backend and improving test efficiency.}
+      \resumeItem{Built a microservice to replace a critical system, migrating 1M+ Postgres rows to DynamoDB with zero downtime and no data loss.}
+      \resumeItem{Led 70+ technical interviews to hire top-tier engineering talent.}
       \resumeItemListEnd{}
       
 % -----------Multiple Positions Heading-----------
@@ -153,15 +156,14 @@
 
     \resumeSubheading{General Motors}{June 2017 --- June 2019}{Software Developer | Manufacturing}{Austin, TX}
       \resumeItemListStart{}
-        \resumeItem{Designed and Implemented file validation system for internal audit tool using Java and Spring Boot with a presentation layer in Angular 2.}
-        \resumeItem{Added authentication and authorization to Spring Boot service using JWT and internal identity service.}
-        \resumeItem{Created reusable S3 client in Java reducing undifferentiated effort for the team.}
-        \resumeItem{Added caching layer to Spring Boot service using Redis which reduced homepage load times by 80\%}
-        \resumeItem{Designed and implemented proof of concept clustered message filtering system using C\#, Akka.Net and Akka.Net Cluster library for routing and surfacing plant floor robot issues.}
-        \resumeItem{Added SonarQube code scanners to development pipeline improving code quality.}
-        \resumeItem{Increased unit test coverage on legacy Java service to above 80\% with meaningful tests.}
-        \resumeItem{Migrated a legacy internal website to Spring boot and Angular from Spring and Java Server Pages.}
-        \resumeItem{Created repeatable patterns for automated frontend tests using internal testing library leveraging Selenium.}
+      \resumeItem{Designed and implemented file validation system for internal audit tool using Java, Spring Boot, and Angular 2.}
+      \resumeItem{Added JWT-based authentication and authorization to Spring Boot service with internal identity service integration.}
+      \resumeItem{Created reusable S3 client in Java, reducing undifferentiated team effort.}
+      \resumeItem{Introduced Redis caching layer to Spring Boot service, reducing homepage load times by 80\%.}
+      \resumeItem{Designed proof-of-concept clustered message filtering system with C\#, Akka.Net, and Akka.Net Cluster for plant floor robot issue routing.}
+      \resumeItem{Integrated SonarQube code scanners into the development pipeline, improving code quality.}
+      \resumeItem{Increased legacy Java service unit test coverage to 80\%+ with meaningful tests.}
+      \resumeItem{Migrated legacy website from Spring and JSP to Spring Boot and Angular.}
     \resumeItemListEnd{}
 
   \resumeSubHeadingListEnd{}
